@@ -9,8 +9,10 @@ This repository is an attempt to create a good and reusable boilerplate for vari
 Don't hesitate to send an issue or a pull request to maintain this repository healthy!
 
 ## How to install it?
-
-Simply clone this repo to start your project. You only need to change the name and the version in the package.json
+* Node >= 7.6 [Link to node Latest Features](https://nodejs.org/en/download/current/)
+* ``git clone https://github.com/kmathy/Koapi.git``
+* ``yarn`` (or ``npm install`` if you want)
+* ``npm start`` to launch server
 
 ## ROADMAP
 To have a global view of our roadmap, see [HERE](ROADMAP.md)
