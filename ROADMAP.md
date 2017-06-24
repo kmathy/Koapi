@@ -8,6 +8,7 @@ __Actual Version: 0.1.0__
 - [ ] Feature to export API Swagger
 
 ## v. 0.3.0
+- [ ] Authentication (OAuth2?)
 - [ ] Authorization, group management users
 - [ ] Security: secure header (use [koa-helmet](https://github.com/venables/koa-helmet))
 - [ ] BodyParsing: use one of [these plugins](https://github.com/koajs/koa/wiki#body-parsing)
