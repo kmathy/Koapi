@@ -14,6 +14,8 @@ __Actual Version: 0.1.0__
 - [ ] BodyParsing: use one of [these plugins](https://github.com/koajs/koa/wiki#body-parsing)
 
 ## v. 0.2.0
+- [x] Babel source mapping during development
+- [x] load Initializers before launching app
 - [ ] Routing configuration
 - [ ] Database (Default: MongoDB. Add choices? MySQL, Postgres,...)
 - [ ] User Model
