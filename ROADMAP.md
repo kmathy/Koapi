@@ -16,8 +16,8 @@ __Actual Version: 0.1.0__
 ## v. 0.2.0
 - [x] Babel source mapping during development
 - [x] load Initializers before launching app
-- [ ] Routing configuration
-- [ ] Database (Default: MongoDB. Add choices? MySQL, Postgres,...)
+- [x] Routing configuration
+- [ ] Database (Default: MongoDB. Add choices? MySQL, Postgres,...) Use a cli to automatically create DB configuration for SQL or NoSQL. See Inquirer.js. + ORM?
 - [ ] User Model
 - [ ] Rest API Users
 - [ ] Development: logger http request
