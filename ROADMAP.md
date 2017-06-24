@@ -1,5 +1,12 @@
 # ROADMAP
 
+__Actual Version: 0.1.0__
+
+## v. 0.4.0
+- [ ] Swagger: install swagger
+- [ ] Swagger UI
+- [ ] Feature to export API Swagger
+
 ## v. 0.3.0
 - [ ] Authorization, group management users
 - [ ] Security: secure header (use [koa-helmet](https://github.com/venables/koa-helmet))
