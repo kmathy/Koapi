@@ -1,5 +1,7 @@
 # Koapi - REST API boilerplate made with Koa.js (v2+)
 
+![](https://img.shields.io/badge/Version-0.1.0-blue.svg)
+
 WORK IN PROGRESS
 
 ## Purpose
