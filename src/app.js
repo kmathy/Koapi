@@ -1,17 +1,14 @@
-const Koa = require('koa')
+'use strict'
+require('babel-register')({
+    sourceMaps: true
+})
+import Koa from 'koa'
+import { loadInitializers } from './initializers/_loadInitializers'
+
 const app = new Koa()
-const Router = require('koa-router')
 const PORT = 3000
 
-const router = new Router()
-
-router.get('/', (ctx, next) => {
-    ctx.body = 'Hello world from root Path'
-})
-
-app
-    .use(router.routes())
-    .use(router.allowedMethods())
+loadInitializers(app)
 
 app.listen(PORT, () => {
     console.log(`App listening on localhost:${PORT}`)
