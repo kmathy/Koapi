@@ -1,15 +1,15 @@
 'use strict'
 import Router from 'koa-router'
+import { userRoutes } from '../models/user.model'
 
 const router = new Router()
-router.get('/', (ctx, next) => {
-    ctx.body = 'Hello world from root Path'
-})
+router.prefix('/api')
+router.use(userRoutes.routes(), userRoutes.allowedMethods())
 
 export const loadRoutes = (app) => {
-    console.log('Load Routes')
     app
         .use(router.routes())
         .use(router.allowedMethods())
+    console.success('Routes Loaded!')
 }
 

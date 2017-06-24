@@ -1,9 +1,10 @@
+'use strict'
 const Router = require('koa-router')
 export const userRoutes = new Router()
 
 userRoutes.prefix('/users')
-userRoutes.get('/', getUsers())
-userRoutes.get('/:id', getUser())
+userRoutes.get('/', (ctx, next) => getUsers(ctx, next))
+userRoutes.get('/:id', (ctx, next) => getUser(ctx, next))
 
 const getUsers = (ctx, next) => {
     console.log('GetUsers called')

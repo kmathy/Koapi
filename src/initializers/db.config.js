@@ -3,7 +3,7 @@ import mongo from 'koa-mongo'
 
 export const loadDB = (app) => {
     // app.use(mongo())
-    console.log('No DB installed. Please take a look')
+    console.warn('/!\\ WARNING: No DB installed. Please take a look')
 }
 
 // OPTIONS default
