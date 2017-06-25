@@ -1,6 +1,6 @@
 # Koapi - REST API boilerplate made with Koa.js (v2+)
 
-![](https://img.shields.io/badge/Version-0.1.0-blue.svg)
+![](https://img.shields.io/badge/Version-0.2.0-blue.svg)
 [![GitHub issues](https://img.shields.io/github/issues/kmathy/Koapi.svg)](https://github.com/kmathy/Koapi/issues)
 [![GitHub stars](https://img.shields.io/github/stars/kmathy/Koapi.svg)](https://github.com/kmathy/Koapi/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/kmathy/Koapi/master/LICENSE)
