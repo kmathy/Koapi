@@ -4,10 +4,14 @@ require('babel-register')({
 })
 require('manakin').global // output colors in Development
 import Koa from 'koa'
+import logger from 'koa-logger'
 import { loadInitializers } from './initializers/_loadInitializers'
 
 const app = new Koa()
 const PORT = 3000
+// #### MIDDLEWARES ####
+
+app.use(logger())
 
 // #### LOAD INITIALIZERS ####
 
