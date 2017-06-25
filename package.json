@@ -28,6 +28,7 @@
     "koa-logger": "^3.0.0",
     "koa-mongo": "^0.7.0",
     "koa-router": "^7.2.1",
-    "mongoose": "^4.11.0"
+    "mongoose": "^4.11.0",
+    "validator": "^7.1.0"
   }
 }

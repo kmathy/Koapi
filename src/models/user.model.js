@@ -1,21 +1,32 @@
 'use strict'
-const Router = require('koa-router')
 import Boom from 'boom'
-export const userRoutes = new Router()
 
-userRoutes.prefix('/users')
-userRoutes.get('/', (ctx, next) => getUsers(ctx, next))
-userRoutes.get('/:id', (ctx, next) => getUser(ctx, next))
+import mongoose from 'mongoose'
+import isEmail from 'validator/lib/isEmail'
+const Schema = mongoose.Schema, ObjectId = Schema.ObjectId
 
-const getUsers = (ctx, next) => {
-    ctx.response.status = 200
-    ctx.response.body = ['test', 'toto']
-    next()
-}
+const UserSchema = new Schema({
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    username: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        trim: true,
+        lowercase: true,
+        unique: true,
+        required: true,
+        validate: [isEmail, 'invalid email']
+    }
+})
 
-const getUser = (ctx, next) => {
-    const error = Boom.notImplemented().output
-    ctx.response.status = error.statusCode
-    ctx.response.body = error.payload
-    next()
-}
+let db = mongoose.createConnection('mongodb://kmathy:Capricorne95@ds139122.mlab.com:39122/koapi-db')
+export const User = db.model('users', UserSchema)

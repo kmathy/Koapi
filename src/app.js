@@ -5,20 +5,21 @@ require('babel-register')({
 require('manakin').global // output colors in Development
 import Koa from 'koa'
 import logger from 'koa-logger'
-import { loadInitializers } from './initializers/_loadInitializers'
+import { router } from './routes'
+import { db } from './db'
 
 const app = new Koa()
 const PORT = 3000
+
 // #### MIDDLEWARES ####
 
 app.use(logger())
-
-// #### LOAD INITIALIZERS ####
-
-loadInitializers(app)
+app.use(router.routes()).use(router.allowedMethods())
 
 // #### START APP ####
-
-app.listen(PORT, () => {
-    console.info(`App listening on localhost:${PORT}`)
+db.on('connected', () => {
+    console.success('Mongo db connected successfully');
+    app.listen(PORT, () => {
+        console.info(`App listening on localhost:${PORT}`)
+    })
 })
