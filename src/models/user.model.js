@@ -1,5 +1,6 @@
 'use strict'
 const Router = require('koa-router')
+import Boom from 'boom'
 export const userRoutes = new Router()
 
 userRoutes.prefix('/users')
@@ -13,7 +14,8 @@ const getUsers = (ctx, next) => {
 }
 
 const getUser = (ctx, next) => {
-    console.log(`param ID: ${ctx.params.id}`)
-    ctx.response.status = 501
+    const error = Boom.notImplemented().output
+    ctx.response.status = error.statusCode
+    ctx.response.body = error.payload
     next()
 }
