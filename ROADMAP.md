@@ -1,6 +1,6 @@
 # ROADMAP
 
-__Actual Version: 0.1.0__
+__Actual Version: 0.2.0__
 
 ## v. 0.4.0
 - [ ] Swagger: install swagger
@@ -18,7 +18,7 @@ __Actual Version: 0.1.0__
 - [x] load Initializers before launching app
 - [x] Routing configuration
 - [x] Database (Default: MongoDB)
-- [ ] User Model
+- [x] User Model
 - [x] Rest API Users
 - [x] Development: logger http request
 - [x] Handle error (See [BOOM](https://github.com/hapijs/boom))
