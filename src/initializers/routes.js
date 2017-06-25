@@ -4,7 +4,8 @@ import { userRoutes } from '../models/user.model'
 
 const router = new Router()
 router.prefix('/api')
-router.use(userRoutes.routes(), userRoutes.allowedMethods())
+// DEFINE ROUTES HERE
+router.use(userRoutes.routes())
 
 export const loadRoutes = (app) => {
     app
