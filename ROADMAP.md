@@ -17,11 +17,11 @@ __Actual Version: 0.1.0__
 - [x] Babel source mapping during development
 - [x] load Initializers before launching app
 - [x] Routing configuration
-- [ ] Database (Default: MongoDB. Add choices? MySQL, Postgres,...) Use a cli to automatically create DB configuration for SQL or NoSQL. See Inquirer.js. + ORM?
+- [x] Database (Default: MongoDB)
 - [ ] User Model
-- [ ] Rest API Users
-- [ ] Development: logger http request
-- [ ] Handle error (See [BOOM](https://github.com/hapijs/boom))
+- [x] Rest API Users
+- [x] Development: logger http request
+- [x] Handle error (See [BOOM](https://github.com/hapijs/boom))
 
 ## v. 0.1.0
 - [x] base project
