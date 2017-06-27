@@ -1,4 +1,5 @@
 'use strict'
+import {} from 'dotenv/config'
 require('babel-register')({
     sourceMaps: true
 })
@@ -9,7 +10,7 @@ import { router } from './routes'
 import { db } from './db'
 
 const app = new Koa()
-const PORT = 3000
+const PORT = process.env.PORT
 
 // #### MIDDLEWARES ####
 
