@@ -1,6 +1,4 @@
 'use strict'
-import Boom from 'boom'
-
 import mongoose from 'mongoose'
 import isEmail from 'validator/lib/isEmail'
 const Schema = mongoose.Schema, ObjectId = Schema.ObjectId
