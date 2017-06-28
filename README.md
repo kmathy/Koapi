@@ -5,6 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/kmathy/Koapi.svg)](https://github.com/kmathy/Koapi/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/kmathy/Koapi/master/LICENSE)
 <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
+[![Code Climate](https://codeclimate.com/github/kmathy/Koapi/badges/gpa.svg)](https://codeclimate.com/github/kmathy/Koapi)
 
 WORK IN PROGRESS
 
