@@ -26,5 +26,5 @@ const UserSchema = new Schema({
   }
 })
 
-let db = mongoose.createConnection('mongodb://kmathy:Capricorne95@ds139122.mlab.com:39122/koapi-db')
+let db = mongoose.createConnection(process.env.MONGO_URI)
 export const User = db.model('users', UserSchema)
