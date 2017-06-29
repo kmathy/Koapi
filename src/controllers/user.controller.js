@@ -1,5 +1,5 @@
 'use strict'
-import Boom from 'boom'
+import BoomError from '../services/boom-error.service'
 import { User } from '../models/user.model'
 
 export default {
@@ -7,27 +7,21 @@ export default {
     try {
       let users = await User.find({})
       ctx.response.body = users
-      ctx.response.statusCode = 200
+      ctx.response.status = 200
     } catch (err) {
-      ctx.response.statusCode = 404
-      ctx.response.body = err
+      BoomError.dbError(ctx, err.message)
     }
   },
 
   getUser: async (ctx, next) => {
     try {
-      let user = await User.findById(ctx.params.id, 'firstName lastName')
+      let user = await User.findById(ctx.params.id)
       if (user) {
         ctx.response.body = user
-        ctx.response.statusCode = 200
-      } else {
-        const error = Boom.notFound(`User with ID = ${ctx.params.id} not found`).output
-        ctx.response.statusCode = error.statusCode
-        ctx.response.body = error.payload
-      }
+        ctx.response.status = 200
+      } else BoomError.notFound(ctx, `User with ID ${ctx.params.id} not found`)
     } catch (err) {
-      ctx.response.statusCode = 404
-      ctx.response.body = err
+      BoomError.dbError(ctx, err.message)
     }
   }
 }

@@ -3,7 +3,7 @@ import 'dotenv/config'
 import Koa from 'koa'
 import logger from 'koa-logger'
 import routes from './routes'
-import { db } from './config/db'
+import db from './config/db'
 /* eslint-disable */
 require('manakin').global // output colors in Development
 /* eslint-enable */
