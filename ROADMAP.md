@@ -18,7 +18,7 @@ __Actual Version: 0.2.2__
 - [ ] Authentication (OAuth2?)
 - [ ] Authorization, group management users
 - [x] Security: secure header (use [koa-helmet](https://github.com/venables/koa-helmet))
-- [ ] BodyParsing: use one of [these plugins](https://github.com/koajs/koa/wiki#body-parsing)
+- [x] BodyParsing: use one of [these plugins](https://github.com/koajs/koa/wiki#body-parsing)
 
 ## v. 0.2.0
 - [x] Babel source mapping during development
