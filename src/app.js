@@ -1,7 +1,7 @@
 'use strict'
 import 'dotenv/config'
 import Koa from 'koa'
-import logger from 'koa-logger'
+import middlewares from './middlewares'
 import routes from './routes'
 import db from './config/db'
 /* eslint-disable */
@@ -10,9 +10,7 @@ require('manakin').global // output colors in Development
 const app = new Koa()
 const PORT = process.env.PORT
 
-// #### MIDDLEWARES ####
-
-app.use(logger())
+app.use(middlewares())
 app.use(routes())
 
 // #### START APP ####

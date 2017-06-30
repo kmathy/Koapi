@@ -36,6 +36,7 @@
     "dotenv": "^4.0.0",
     "koa": "^2.3.0",
     "koa-convert": "^1.2.0",
+    "koa-helmet": "^3.2.0",
     "koa-logger": "^3.0.0",
     "koa-mongo": "^0.7.0",
     "koa-router": "^7.2.1",
