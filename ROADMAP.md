@@ -1,6 +1,12 @@
 # ROADMAP
 
-__Actual Version: 0.2.0__
+__Actual Version: 0.2.1__
+
+## v. 0.5.0
+- [ ] Create a CLI
+- [ ] CLI: able to generate a model
+- [ ] CLI: able to generate a controller
+- [ ] CLI: after generating a controller, generate specific routes
 
 ## v. 0.4.0
 - [ ] Swagger: install swagger
@@ -8,7 +14,7 @@ __Actual Version: 0.2.0__
 - [ ] Feature to export API Swagger
 
 ## v. 0.3.0
-- [ ] Refactoring v0.2.0 before continue
+- [x] Refactoring v0.2.0 before continue
 - [ ] Authentication (OAuth2?)
 - [ ] Authorization, group management users
 - [ ] Security: secure header (use [koa-helmet](https://github.com/venables/koa-helmet))
