@@ -24,7 +24,7 @@ const UserSchema = new Schema({
     required: true,
     validate: [isEmail, 'invalid email']
   }
-})
+}, { runSettersOnQuery: true })
 
 let db = mongoose.createConnection(process.env.MONGO_URI)
 export const User = db.model('users', UserSchema)

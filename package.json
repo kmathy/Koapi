@@ -34,6 +34,7 @@
     "babel-polyfill": "^6.23.0",
     "boom": "^5.1.0",
     "dotenv": "^4.0.0",
+    "jsonwebtoken": "^7.4.1",
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
     "koa-convert": "^1.2.0",
