@@ -2,16 +2,11 @@
 
 __Actual Version: 0.2.2__
 
-## v. 0.5.0
+## v. 0.4.0
 - [ ] Create a CLI
 - [ ] CLI: able to generate a model
 - [ ] CLI: able to generate a controller
 - [ ] CLI: after generating a controller, generate specific routes
-
-## v. 0.4.0
-- [ ] Swagger: install swagger
-- [ ] Swagger UI
-- [ ] Feature to export API Swagger
 
 ## v. 0.3.0
 - [x] Refactoring v0.2.0 before continue
