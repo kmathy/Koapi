@@ -1,6 +1,6 @@
 # ROADMAP
 
-__Actual Version: 0.2.2__
+__Actual Version: 0.2.3__
 
 ## v. 0.4.0
 - [ ] Create a CLI
@@ -11,7 +11,7 @@ __Actual Version: 0.2.2__
 ## v. 0.3.0
 - [x] Refactoring v0.2.0 before continue
 - [ ] Authentication (OAuth2?)
-- [ ] Authorization, group management users
+- [x] Authorization
 - [x] Security: secure header (use [koa-helmet](https://github.com/venables/koa-helmet))
 - [x] BodyParsing: use one of [these plugins](https://github.com/koajs/koa/wiki#body-parsing)
 
