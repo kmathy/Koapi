@@ -10,8 +10,12 @@ export default {
     setResponse(ctx, Boom.notFound(message, data).output)
   },
 
-  dbError: (ctx, message = 'No message', data = {}) => {
-    console.error(`DB ERROR ${message}`)
+  internalError: (ctx, message = 'No message', data = {}) => {
+    console.error(`INTERNAL ERROR ${message}`)
     setResponse(ctx, Boom.badImplementation(message, data).output)
+  },
+
+  dbSaveError: (ctx, message = 'No message', data = {}) => {
+    setResponse(ctx, Boom.badData(message, data).output)
   }
 }

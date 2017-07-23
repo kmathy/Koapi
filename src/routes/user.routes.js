@@ -6,5 +6,6 @@ const router = new Router({prefix: '/users'})
   .get('/', (ctx, next) => User.getUsers(ctx, next))
   .get('/:id', (ctx, next) => User.getUser(ctx, next))
   .post('/login', (ctx, next) => User.login(ctx, next))
+  .post('/register', (ctx, next) => User.register(ctx, next))
 
 export default () => router.routes()

@@ -10,7 +10,8 @@ export const options = {
 
 export const paths = {
   path: [
-    /^\/api\/users/,
+    '/api/users/login',
+    '/api/users/register',
     '/favicon.ico'
   ]
 }

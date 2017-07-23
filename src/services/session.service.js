@@ -1,8 +1,7 @@
 import jwt from 'jsonwebtoken'
 
 export default {
-  login: (user) => {
-    console.log(user)
+  createToken: (user) => {
     return jwt.sign({
       id: user._id,
       username: user.username,
@@ -11,6 +10,5 @@ export default {
     }, process.env.JWT_SECRET, {
       expiresIn: '1h'
     })
-  },
-  logout: () => {}
+  }
 }
