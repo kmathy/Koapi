@@ -17,7 +17,7 @@ Don't hesitate to send an issue or a pull request to maintain this repository he
 
 ## features
 - **Mongoose**
-- **Webpack** to create builds (Uglify.js)
+- **Webpack** to create builds (Uglify.js, Compression plugin)
 - **Yarn** for fast installation
 - **Eslint + Standard style**
 - **Babel** to parse files in es5 + keep sourceMaps
