@@ -15,6 +15,19 @@ This repository is an attempt to create a good and reusable boilerplate for vari
 <br>
 Don't hesitate to send an issue or a pull request to maintain this repository healthy!
 
+## features
+- **Mongoose**
+- **Webpack** to create builds (Uglify.js)
+- **Yarn** for fast installation
+- **Eslint + Standard style**
+- **Babel** to parse files in es5 + keep sourceMaps
+- **Nodemon** to reload automatically the server in development
+- **Authentication using JWT and bcrypt**
+- **"Boom"** to manage http error (See [Boom](https://github.com/hapijs/boom))
+- Basic securities (See [koa-helmet](https://github.com/venables/koa-helmet#usage))
+- Basic routing configuration
+- Basic User model
+
 ## How to install it?
 * Node >= 7.6 [Link to node Latest Features](https://nodejs.org/en/download/current/)
 * ``git clone https://github.com/kmathy/Koapi.git``
