@@ -3,6 +3,7 @@
 __Actual Version: 0.3.1__
 
 ## v. 0.4.0
+- [x] Webpack: add compression plugin
 - [ ] Create a CLI
 - [ ] CLI: able to generate a model
 - [ ] CLI: able to generate a controller
