@@ -1,6 +1,6 @@
 # ROADMAP
 
-__Actual Version: 0.3.0__
+__Actual Version: 0.3.1__
 
 ## v. 0.4.0
 - [ ] Create a CLI
