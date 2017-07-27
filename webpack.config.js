@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
+const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = {
   entry: './src/app.js',
@@ -26,6 +27,7 @@ module.exports = {
       output: {
         comments: false
       }
-    })
+    }),
+    new CompressionPlugin()
   ]
 }
