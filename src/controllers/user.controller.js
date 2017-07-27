@@ -11,7 +11,7 @@ export default {
       ctx.response.body = users
       ctx.response.status = 200
     } catch (err) {
-      BoomError.internalError(ctx, err.message)
+      BoomError.sendError(500, ctx, err.message)
     }
   },
 
@@ -21,9 +21,9 @@ export default {
       if (user) {
         ctx.response.body = user
         ctx.response.status = 200
-      } else BoomError.notFound(ctx, `User with ID ${ctx.params.id} not found`)
+      } else BoomError.sendError(404, ctx, `User with ID ${ctx.params.id} not found`)
     } catch (err) {
-      BoomError.internalError(ctx, err.message)
+      BoomError.sendError(500, ctx, err.message)
     }
   },
 
@@ -32,17 +32,17 @@ export default {
       const email = ctx.request.body.email
       const user = await User.findOne({ email: email })
       if (!user) {
-        BoomError.notFound(ctx, 'Authentication Failed: User not found')
+        BoomError.sendError(404, ctx, 'Authentication Failed: User not found')
       } else if (user) {
         if (!user.comparePassword(ctx.request.body.password)) {
-          BoomError.notFound(ctx, 'Authentication Failed: Wrong password')
+          BoomError.sendError(404, ctx, 'Authentication Failed: Wrong password')
         } else {
           ctx.response.body = SessionService.createToken(user)
           ctx.response.status = 200
         }
       }
     } catch (err) {
-      BoomError.internalError(ctx, err.message)
+      BoomError.sendError(500, ctx, err.message)
     }
   },
 
@@ -55,9 +55,9 @@ export default {
         userSaved.hash_password = undefined
         ctx.response.status = 200
         ctx.response.body = userSaved
-      } else BoomError.dbSaveError(ctx, 'DB: Problem to register the user')
+      } else BoomError.sendError(422, ctx, 'DB: Problem to register the user')
     } catch (err) {
-      BoomError.internalError(ctx, err)
+      BoomError.sendError(500, ctx, err)
     }
   }
 }
