@@ -1,6 +1,6 @@
 {
   "name": "koapi",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Koapi - REST API boilerplate made with Koa.js (v2+)",
   "main": "src/app.js",
   "scripts": {
