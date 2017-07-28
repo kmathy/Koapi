@@ -1,7 +1,6 @@
 # Koapi - REST API boilerplate made with Koa.js (v2+)
 
-![](https://img.shields.io/badge/Version-0.2.2-blue.svg)
-[![GitHub issues](https://img.shields.io/github/issues/kmathy/Koapi.svg)](https://github.com/kmathy/Koapi/issues)
+![](https://img.shields.io/badge/Version-0.3.1-blue.svg)
 [![GitHub stars](https://img.shields.io/github/stars/kmathy/Koapi.svg)](https://github.com/kmathy/Koapi/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/kmathy/Koapi/master/LICENSE)
 <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
@@ -17,7 +16,7 @@ Don't hesitate to send an issue or a pull request to maintain this repository he
 
 ## features
 - **Mongoose**
-- **Webpack** to create builds (Uglify.js)
+- **Webpack** to create builds (Uglify.js, Compression plugin)
 - **Yarn** for fast installation
 - **Eslint + Standard style**
 - **Babel** to parse files in es5 + keep sourceMaps

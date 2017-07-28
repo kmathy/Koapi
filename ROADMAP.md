@@ -1,12 +1,13 @@
 # ROADMAP
 
-__Actual Version: 0.3.0__
+__Actual Version: 0.3.1__
 
 ## v. 0.4.0
-- [ ] Create a CLI
-- [ ] CLI: able to generate a model
-- [ ] CLI: able to generate a controller
-- [ ] CLI: after generating a controller, generate specific routes
+- [x] Webpack: add compression plugin
+- [ ] Mocha: installation + configuration
+- [ ] Supertest: installation + configuration
+- [ ] Write unit test for services
+- [ ] Test User routes
 
 ## v. 0.3.0
 - [x] Refactoring v0.2.0 before continue
