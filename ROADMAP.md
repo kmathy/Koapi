@@ -8,8 +8,7 @@ __Actual Version: 0.4.0__
 
 ## v. 0.5.0
 - [ ] Review: Authentication - switch to Passport.js to define multiple strategies
-- [ ] Review: add Debug
-- [ ] Review: configuration using dotenv + convict
+- [x] Review: configuration using dotenv + convict
 
 ## v. 0.4.0
 - [x] Webpack: add compression plugin
