@@ -21,6 +21,7 @@ Don't hesitate to send an issue or a pull request to maintain this repository he
 - **Nodemon** - to reload automatically the server in development
 - **Authentication using JWT and bcrypt to encrypt password**
 - **Koa-respond** - to send responses
+- **Convict** to manage configuration
 - Basic securities (See [koa-helmet](https://github.com/venables/koa-helmet#usage))
 - Basic routing configuration ([koa-router](https://github.com/alexmingoia/koa-router))
 - Basic User model
