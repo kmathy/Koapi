@@ -5,6 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "start": "nodemon src/app.js --exec babel-node",
+    "test": "mocha --compilers js:babel-core/register \"src/**/*.spec.js\"",
     "build": "webpack"
   },
   "author": "Kevin MATHY",
@@ -27,7 +28,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "manakin": "^0.4.7",
+    "mocha": "^3.4.2",
     "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
     "webpack": "^3.0.0",
     "webpack-node-externals": "^1.6.0"
   },
