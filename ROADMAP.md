@@ -1,13 +1,20 @@
 # ROADMAP
 
-__Actual Version: 0.3.1__
+__Actual Version: 0.4.0__
+
+## v. 0.6.0
+- [ ] Write unit test for services
+- [ ] Test User routes
+
+## v. 0.5.0
+- [ ] Review: Authentication - switch to Passport.js to define multiple strategies
+- [ ] Review: add Debug
+- [ ] Review: configuration using dotenv + convict
 
 ## v. 0.4.0
 - [x] Webpack: add compression plugin
-- [ ] Mocha: installation + configuration
-- [ ] Supertest: installation + configuration
-- [ ] Write unit test for services
-- [ ] Test User routes
+- [x] Mocha: installation + configuration
+- [x] Supertest: installation + configuration
 
 ## v. 0.3.0
 - [x] Refactoring v0.2.0 before continue
