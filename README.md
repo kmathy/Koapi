@@ -6,8 +6,6 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/597afffe6725bd0040fda90f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/597afffe6725bd0040fda90f)
 [![Code Climate](https://codeclimate.com/github/kmathy/Koapi/badges/gpa.svg)](https://codeclimate.com/github/kmathy/Koapi)
 
-WORK IN PROGRESS
-
 ## Purpose
 There is too few projects using the new version of Koa and with a list of updated plugins, dependencies,... 
 This repository is an attempt to create a good and reusable boilerplate for various starting projects in API.
@@ -15,16 +13,16 @@ This repository is an attempt to create a good and reusable boilerplate for vari
 Don't hesitate to send an issue or a pull request to maintain this repository healthy!
 
 ## features
-- **Mongoose**
-- **Webpack** to create builds (Uglify.js, Compression plugin)
-- **Yarn** for fast installation
-- **Eslint + Standard style**
-- **Babel** to parse files in es5 + keep sourceMaps
-- **Nodemon** to reload automatically the server in development
-- **Authentication using JWT and bcrypt**
-- **"Boom"** to manage http error (See [Boom](https://github.com/hapijs/boom))
+- **Mongoose** - to manage database in Mongo
+- **Webpack** - to create builds (Uglify.js, Compression plugin)
+- **Yarn** - for fast installation
+- **Eslint + Standard style** - Standard style for code consistency
+- **Babel** - to parse files in es5 + keep sourceMaps
+- **Nodemon** - to reload automatically the server in development
+- **Authentication using JWT and bcrypt to encrypt password**
+- **Koa-respond** - to send responses
 - Basic securities (See [koa-helmet](https://github.com/venables/koa-helmet#usage))
-- Basic routing configuration
+- Basic routing configuration ([koa-router](https://github.com/alexmingoia/koa-router))
 - Basic User model
 
 ## How to install it?

@@ -1,11 +1,11 @@
 {
-  "name": "Koapi",
-  "version": "0.2.3",
+  "name": "koapi",
+  "version": "0.3.2",
   "description": "Koapi - REST API boilerplate made with Koa.js (v2+)",
   "main": "src/app.js",
   "scripts": {
     "start": "nodemon src/app.js --exec babel-node",
-    "test": "mocha --compilers js:babel-core/register \"src/**/*.spec.js\"",
+    "test": "set NODE_ENV=test && mocha --compilers js:babel-core/register \"src/**/*.spec.js\"",
     "build": "webpack"
   },
   "author": "Kevin MATHY",
@@ -20,7 +20,9 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
+    "chai": "^4.1.0",
     "compression-webpack-plugin": "^1.0.0",
+    "cross-env": "^5.0.1",
     "eslint": "^4.1.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.6.0",
@@ -37,7 +39,6 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "bcrypt": "^1.0.2",
-    "boom": "^5.1.0",
     "dotenv": "^4.0.0",
     "jsonwebtoken": "^7.4.1",
     "koa": "^2.3.0",
@@ -46,7 +47,7 @@
     "koa-helmet": "^3.2.0",
     "koa-jwt": "^3.2.2",
     "koa-logger": "^3.0.0",
-    "koa-mongo": "^1.2.0",
+    "koa-respond": "^1.0.1",
     "koa-router": "^7.2.1",
     "mongoose": "^4.11.0",
     "validator": "^8.0.0"

@@ -31,7 +31,8 @@ let UserSchema = new Schema({
     validate: {
       isAsync: false,
       validator: isEmail,
-      message: 'Invalid email' }
+      message: 'Invalid email'
+    }
   },
   created: {
     type: Date,

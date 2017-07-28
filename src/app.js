@@ -4,7 +4,6 @@ import Koa from 'koa'
 import middlewares from './middlewares'
 import routes from './routes'
 import db from './config/db'
-import BoomError from './services/boom-error.service'
 /* eslint-disable */
 require('manakin').global // output colors in Development
 /* eslint-enable */
@@ -14,7 +13,7 @@ const PORT = process.env.PORT
 app.use((ctx, next) => {
   return next().catch((err) => {
     if (err.status === 401) {
-      BoomError.sendError(401, ctx, 'Protected resource, you need to authenticate the request')
+      ctx.body = 'Protected resource, you need to authenticate the request'
     } else {
       throw err
     }
