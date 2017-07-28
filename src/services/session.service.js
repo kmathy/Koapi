@@ -1,14 +1,14 @@
 import jwt from 'jsonwebtoken'
+import conf from '../config'
 
 export default {
   createToken: (user) => {
-    console.log(process.env.JWT_SECRET)
     return jwt.sign({
       id: user._id,
       username: user.username,
       firstName: user.firstName,
       lastName: user.lastName
-    }, process.env.JWT_SECRET, {
+    }, conf.get('jwtSecret'), {
       expiresIn: '1h'
     })
   }

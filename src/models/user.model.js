@@ -2,6 +2,7 @@
 import mongoose from 'mongoose'
 import isEmail from 'validator/lib/isEmail'
 import bcrypt from 'bcrypt'
+import conf from '../config'
 const Schema = mongoose.Schema
 
 let UserSchema = new Schema({
@@ -44,5 +45,5 @@ UserSchema.methods.comparePassword = function (password) {
   return bcrypt.compareSync(password, this.hash_password)
 }
 
-let db = mongoose.createConnection(process.env.MONGO_URI)
+let db = mongoose.createConnection(conf.get('mongodb'), { useMongoClient: true })
 export const User = db.model('users', UserSchema)

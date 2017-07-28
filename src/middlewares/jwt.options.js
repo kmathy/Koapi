@@ -1,9 +1,9 @@
 'use strict'
-
+import conf from '../config'
 // options include the shared secret
 
 export const options = {
-  secret: process.env.JWT_SECRET
+  secret: conf.get('jwtSecret')
 }
 
 // exclude jwt to check these routes
