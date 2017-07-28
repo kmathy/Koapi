@@ -16,6 +16,7 @@ connectDatabase(conf.get('mongodb'))
 app.use((ctx, next) => {
   return next().catch((err) => {
     if (err.status === 401) {
+      ctx.status = 401
       ctx.body = 'Protected resource, you need to authenticate the request'
     } else {
       throw err
