@@ -13,17 +13,18 @@ This repository is an attempt to create a good and reusable boilerplate for vari
 Don't hesitate to send an issue or a pull request to maintain this repository healthy!
 
 ## features
-- **Mongoose** - to manage database in Mongo
-- **Webpack** - to create builds (Uglify.js, Compression plugin)
-- **Yarn** - for fast installation
-- **Eslint + Standard style** - Standard style for code consistency
-- **Babel** - to parse files in es5 + keep sourceMaps
-- **Nodemon** - to reload automatically the server in development
-- **Authentication using JWT and bcrypt to encrypt password**
-- **Koa-respond** - to send responses
-- **Convict** to manage configuration
-- Basic securities (See [koa-helmet](https://github.com/venables/koa-helmet#usage))
-- Basic routing configuration ([koa-router](https://github.com/alexmingoia/koa-router))
+- [Mongoose](https://github.com/Automattic/mongoose) - to manage database in Mongo
+- [Webpack](https://github.com/webpack/webpack) - to create builds (Uglify.js, Compression plugin)
+- [Yarn](https://github.com/yarnpkg/yarn) - for fast installation
+- [Eslint](https://github.com/eslint/eslint) + [Standard style](https://github.com/standard/standard) - Standard style for code consistency
+- [Babel](https://github.com/babel/babel) - to parse files in es5 + keep sourceMaps
+- [Nodemon](https://github.com/remy/nodemon) - to reload automatically the server in development
+- [JWT](https://jwt.io/) - Authentication and authorization (Soon replaced by [Passport.js](https://github.com/jaredhanson/passport))
+- [bcrypt](https://github.com/dcodeIO/bcrypt.js) - Encrypt data such as password
+- [Koa-respond](https://github.com/jeffijoe/koa-respond) - to send responses with specific status
+- [Convict](https://github.com/mozilla/node-convict) to manage configuration
+- [koa-helmet](https://github.com/venables/koa-helmet#usage) - Basic Securities
+- [koa-router](https://github.com/alexmingoia/koa-router) - Basic routing configuration
 - Basic User model
 
 ## How to install it?
